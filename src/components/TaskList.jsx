@@ -1,4 +1,3 @@
-// TaskList.jsx
 import React, {useState} from 'react';
 import DeleteIcon from '@mui/icons-material/Delete';
 import Checkbox from '@mui/material/Checkbox';
@@ -9,7 +8,7 @@ function TaskList(props) {
   const [isEditing, setIsEditing] = useState(false);
   const [editedText, setEditedText] = useState(props.task);
 
-  const handleEdit = () => {
+  function handleEdit() {
     props.onEdit(props.id, editedText);
     setIsEditing(false);
   };
@@ -27,7 +26,11 @@ function TaskList(props) {
             <input
               type="text"
               value={editedText}
-              onChange={(e) => setEditedText(e.target.value)}
+              onChange={(e) => {
+                  const value = e.target.value;
+                  setEditedText(value)
+                  }
+              }
               onBlur={handleEdit}
               className="edit-input"
               autoFocus
