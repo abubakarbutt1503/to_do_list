@@ -1,4 +1,4 @@
-// App.jsx
+import { motion, AnimatePresence } from 'framer-motion';
 import React, { useState } from 'react';
 import '../index.css';
 import Heading from './Heading';
@@ -46,26 +46,36 @@ function App() {
   };
 
   return (
-    <div className='display'>
-      <Heading title="To Do List" />
-      <InputTextArea 
-        value={addTask}
-        onChecked={handleChange} 
-        addButtonClick={addTaskButton} 
-      />
+  <div className='display'>
+    <Heading title="To Do List" />
+    <InputTextArea 
+      value={addTask}
+      onChecked={handleChange} 
+      addButtonClick={addTaskButton} 
+    />
+    <AnimatePresence>
       {taskList.map((listItem, index) => (
-        <TaskList
+        <motion.div
           key={index}
-          id={index}
-          task={listItem.text}
-          completed={listItem.completed}
-          onDelete={deleteTask}
-          onEdit={editTask}
-          onToggle={toggleComplete}
-        />
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, x: 100 }}
+          transition={{ type: "spring", stiffness: 300, damping: 20 }}
+          layout
+        >
+          <TaskList
+            id={index}
+            task={listItem.text}
+            completed={listItem.completed}
+            onDelete={deleteTask}
+            onEdit={editTask}
+            onToggle={toggleComplete}
+          />
+        </motion.div>
       ))}
-    </div>
-  );
+    </AnimatePresence>
+  </div>
+);
 }
 
 export default App;
