@@ -22,6 +22,7 @@ function App() {
       ]);
       setAddTask("");
     }
+    event.preventDefault();
   };
 
   function deleteTask (id) {
