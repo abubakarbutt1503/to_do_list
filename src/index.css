@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> animation-feature
 body {
   background-color: #ddd7fb;
   background-image: url("https://www.transparenttextures.com/patterns/binding-light.png");
@@ -9,6 +13,10 @@ body {
   font-family: 'Poppins', 'Segoe UI', sans-serif;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> animation-feature
 .display {
   background-color: #ffffff;
   background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
@@ -23,6 +31,10 @@ body {
   overflow-y: auto;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> animation-feature
 .heading-outter {
   margin-top: 10px;
   display: flex;
@@ -43,6 +55,10 @@ body {
   letter-spacing: 0.8px;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> animation-feature
 .Add-text-area {
   display: flex;
   background-color: #f8fafc;
@@ -101,7 +117,7 @@ body {
   opacity: 1;
 }
 
-/* Task List */
+
 .task-list-container {
   width: 85%;
   margin: 5px auto;
@@ -115,9 +131,9 @@ body {
 .task-item {
   display: flex;
   align-items: center;
-  gap: 8px; /* Reduced from 10px */
-  padding: 4px 15px; /* Reduced vertical padding */
-  margin: 0; /* Removed vertical margin */
+  gap: 8px; 
+  padding: 4px 15px; 
+  margin: 0; 
   background-color: #ffffff;
   border-radius: 8px;
   border: 2px solid #ede9fe;
@@ -130,6 +146,10 @@ body {
   box-shadow: 0 2px 8px rgba(124, 58, 237, 0.1);
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> animation-feature
 .MuiSvgIcon-root {
   font-size: 1.3rem !important;
 }
@@ -142,16 +162,24 @@ body {
   color: #f59e0b !important;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> animation-feature
 .task-text {
   flex: 1;
   color: #1e293b;
   font-size: 17px;
   font-weight: 500;
-  margin: 0; /* Ensure no text margin */
-  line-height: 1.2; /* Tighter line height */
+  margin: 0; 
+  line-height: 1.2; 
 }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> animation-feature
 .delete-icon, .edit-icon {
   color: #7c3aed;
   cursor: pointer;
@@ -164,6 +192,10 @@ body {
   transform: scale(1.05);
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> animation-feature
 .task-item.completed .task-text {
   text-decoration: line-through;
   opacity: 0.6;
@@ -172,3 +204,19 @@ body {
   text-decoration: line-through;
   opacity: 0.6;
 }
+<<<<<<< HEAD
+=======
+
+.task-item {
+  transition: background-color 0.3s ease;
+}
+
+.edit-input {
+  transition: all 0.3s ease;
+  transform-origin: left;
+}
+
+.display {
+  scroll-behavior: smooth;
+}
+>>>>>>> animation-feature
