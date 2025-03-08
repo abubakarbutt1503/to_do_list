@@ -17,11 +17,13 @@ function TaskList(props) {
     <div className="task-list-container">
       <ul className="task-list">
         <li className="task-item">
+          
           <Checkbox 
             className="task-checkbox"
             checked={props.completed}
             onChange={() => props.onToggle(props.id)}
           />
+
           {isEditing ? (
             <input
               type="text"
@@ -40,6 +42,8 @@ function TaskList(props) {
               {props.task}
             </span>
           )}
+
+
           <div className="icon-container">
             <EditIcon 
               className="edit-icon" 
@@ -50,6 +54,8 @@ function TaskList(props) {
               onClick={() => props.onDelete(props.id)}
             />
           </div>
+
+          
         </li>
       </ul>
     </div>

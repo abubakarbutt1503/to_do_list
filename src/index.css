@@ -1,3 +1,4 @@
+/* Base Styles */
 body {
   background-color: #f5f3ff;
   display: flex;
@@ -8,8 +9,9 @@ body {
   font-family: 'Poppins', 'Segoe UI', sans-serif;
 }
 
+/* Main Container */
 .display {
-  background-color: #8a005e;
+  background-color: #f3f2f2;
   background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
   width: 45vw;
   min-width: 400px;
@@ -22,6 +24,7 @@ body {
   overflow-y: auto;
 }
 
+/* Heading */
 .heading-outter {
   margin-top: 25px;
   display: flex;
@@ -42,6 +45,7 @@ body {
   letter-spacing: 0.8px;
 }
 
+/* Input Section */
 .Add-text-area {
   display: flex;
   background-color: #f8fafc;
@@ -129,6 +133,7 @@ body {
   box-shadow: 0 2px 8px rgba(124, 58, 237, 0.1);
 }
 
+/* Checkbox */
 .MuiSvgIcon-root {
   font-size: 1.3rem !important;
 }
@@ -141,6 +146,7 @@ body {
   color: #f59e0b !important;
 }
 
+/* Task Text */
 .task-text {
   flex: 1;
   color: #1e293b;
@@ -151,6 +157,7 @@ body {
 }
 
 
+/* Delete Icon */
 .delete-icon, .edit-icon {
   color: #7c3aed;
   cursor: pointer;
@@ -163,6 +170,7 @@ body {
   transform: scale(1.05);
 }
 
+/* Completed Task */
 .task-item.completed .task-text {
   text-decoration: line-through;
   opacity: 0.6;
