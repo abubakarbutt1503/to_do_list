@@ -9,7 +9,7 @@ function TaskList(props) {
   const [isEditing, setIsEditing] = useState(false);
   const [editedText, setEditedText] = useState(props.task);
 
-  const handleEdit = () => {
+  function handleEdit () {
     props.onEdit(props.id, editedText);
     setIsEditing(false);
   };

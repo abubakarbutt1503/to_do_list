@@ -45,12 +45,15 @@ function App() {
 
   return (
     <div className='display'>
+      
       <Heading title="To Do List" />
+
       <InputTextArea 
         value={addTask}
         onChecked={handleChange} 
         addButtonClick={addTaskButton} 
       />
+      
       {taskList.map((listItem, index) => (
         <TaskList
           key={index}
