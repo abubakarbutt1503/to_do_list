@@ -1,5 +1,6 @@
 body {
   background-color: #f5f3ff;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +11,6 @@ body {
 
 .display {
   background-color: #ffffff;
-  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
   width: 45vw;
   min-width: 400px;
   height: 70vh;
@@ -50,7 +50,7 @@ body {
   max-width: 500px;
   margin: 15px auto;
   padding: 12px;
-  width: 90%;
+  width: 80%;
   border: 2px solid #ede9fe;
 }
 
