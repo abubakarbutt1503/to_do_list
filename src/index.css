@@ -47,10 +47,9 @@ body {
   display: flex;
   background-color: #f8fafc;
   border-radius: 12px;
-  gap: 12px;
+  gap: 10px;
   max-width: 500px;
   margin: 15px auto;
-  padding: 12px;
   width: 80%;
   border: 2px solid #ede9fe;
 }
