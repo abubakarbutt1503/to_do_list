@@ -10,7 +10,8 @@ function App() {
   const [taskList, setTaskList] = useState([]);
 
   function handleChange (event) {
-    setAddTask(event.target.value);
+    const value = event.target.value;
+    setAddTask(value);
   };
 
   function addTaskButton () {
