@@ -172,3 +172,18 @@ body {
   text-decoration: line-through;
   opacity: 0.6;
 }
+
+/* Add these new transitions */
+.task-item {
+  transition: background-color 0.3s ease;
+}
+
+.edit-input {
+  transition: all 0.3s ease;
+  transform-origin: left;
+}
+
+/* Add smooth scrolling */
+.display {
+  scroll-behavior: smooth;
+}
