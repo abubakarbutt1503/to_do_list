@@ -6,50 +6,45 @@ import InputTextArea from './InputTextArea';
 import TaskList from './TaskList';
 
 function App() {
-  const [addTask, setAddTask] = useState("");
   const [taskList, setTaskList] = useState([]);
 
-  function handleChange (event) {
-    const value = event.target.value;
-    setAddTask(value);
-  };
+  function handleChange(event) {
+    // This function is no longer needed as we're handling input in the InputTextArea component
+  }
 
-  function addTaskButton () {
-    if (addTask.trim()) {
+  function addTaskButton(taskText) {
+    if (taskText.trim()) {
       setTaskList(prevTasks => [
         ...prevTasks, 
-        { text: addTask, completed: false }
+        { text: taskText, completed: false }
       ]);
-      setAddTask("");
     }
-    event.preventDefault();
-  };
+  }
 
-  function deleteTask (id) {
+  function deleteTask(id) {
     setTaskList(prevTasks => prevTasks.filter((task, index) => index !== id));
-  };
+  }
 
-    function editTask (id, updatedTask) {
+  function editTask(id, updatedTask) {
     setTaskList(prevTasks => 
       prevTasks.map((task, index) => 
         index === id ? { ...task, text: updatedTask } : task
       )
     );
-  };
+  }
 
-  function toggleComplete (id) {
+  function toggleComplete(id) {
     setTaskList(prevTasks =>
       prevTasks.map((task, index) =>
         index === id ? { ...task, completed: !task.completed } : task
       )
     );
-  };
+  }
 
   return (
     <div className='display'>
       <Heading title="To Do List" />
       <InputTextArea 
-        value={addTask}
         onChecked={handleChange} 
         addButtonClick={addTaskButton} 
       />
