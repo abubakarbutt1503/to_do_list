@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> animation-feature
 body {
-  background-color: #ddd7fb;
+  background-color: #f0f9ff;
   background-image: url("https://www.transparenttextures.com/patterns/binding-light.png");
   display: flex;
   justify-content: center;
@@ -13,10 +9,6 @@ body {
   font-family: 'Poppins', 'Segoe UI', sans-serif;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> animation-feature
 .display {
   background-color: #ffffff;
   background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
@@ -24,17 +16,14 @@ body {
   min-width: 400px;
   height: 80vh;
   border-radius: 16px;
-  box-shadow: 0px 8px 24px rgba(124, 58, 237, 0.1);
+  box-shadow: 0px 8px 30px rgba(0, 124, 240, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow-y: auto;
+  scroll-behavior: smooth;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> animation-feature
 .heading-outter {
   margin-top: 10px;
   display: flex;
@@ -43,54 +32,58 @@ body {
 
 .heading {
   color: white;
-  background-color: #7c3aed;
+  background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%);
   text-align: center;
   width: 200px;
   padding: 12px;
-  border-radius: 8px;
+  border-radius: 12px;
   font-size: 20px;
   font-weight: 700;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 15px rgba(37, 99, 235, 0.2);
   margin: 15px 0;
   letter-spacing: 0.8px;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> animation-feature
 .Add-text-area {
   display: flex;
-  background-color: #f8fafc;
+  background-color: #ffffff;
   border-radius: 12px;
   gap: 10px;
   max-width: 500px;
   margin: 10px auto;
   padding: 12px;
   width: 80%;
-  border: 2px solid #ede9fe;
+  border: 2px solid #e0f2fe;
+  transition: all 0.2s ease;
+  box-shadow: 0px 2px 10px rgba(0, 124, 240, 0.05);
+}
+
+.Add-text-area:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(0, 124, 240, 0.1);
+  border-color: #bae6fd;
 }
 
 .Add-task {
   flex: 1;
   padding: 12px 18px;
-  border: 2px solid #ddd6fe;
+  border: 2px solid #e0f2fe;
   border-radius: 8px;
   font-size: 16px;
   transition: all 0.3s ease;
   background: #ffffff;
-  color: #1e293b;
+  color: #0f172a;
   font-family: inherit;
 }
 
 .Add-task:focus {
   outline: none;
-  border-color: #f59e0b;
-  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.1);
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
 }
 
 .Add-button {
-  background-color: #7c3aed;
+  background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%);
   color: white;
   padding: 12px 28px;
   border: none;
@@ -104,8 +97,9 @@ body {
 }
 
 .Add-button:hover {
-  background-color: #6b21a8;
+  background: linear-gradient(135deg, #0284c7 0%, #1d4ed8 100%);
   transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.2);
 }
 
 .Add-button:active {
@@ -116,7 +110,6 @@ body {
   color: #94a3b8;
   opacity: 1;
 }
-
 
 .task-list-container {
   width: 85%;
@@ -132,91 +125,100 @@ body {
   display: flex;
   align-items: center;
   gap: 8px; 
-  padding: 4px 15px; 
-  margin: 0; 
+  padding: 12px 20px; 
+  margin: 8px 0; 
   background-color: #ffffff;
-  border-radius: 8px;
-  border: 2px solid #ede9fe;
+  border-radius: 10px;
+  border: 2px solid #e0f2fe;
   transition: all 0.2s ease;
+  box-shadow: 0px 2px 8px rgba(0, 124, 240, 0.05);
 }
-
 
 .task-item:hover {
   transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(124, 58, 237, 0.1);
+  border-color: #bae6fd;
+  box-shadow: 0 4px 15px rgba(0, 124, 240, 0.1);
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> animation-feature
 .MuiSvgIcon-root {
   font-size: 1.3rem !important;
 }
 
 .task-checkbox {
-  color: #7c3aed !important;
+  color: #0ea5e9 !important;
+  transition: all 0.3s ease !important;
 }
 
 .task-checkbox.Mui-checked {
-  color: #f59e0b !important;
+  color: #2563eb !important;
+  transform: scale(1.1);
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> animation-feature
 .task-text {
   flex: 1;
-  color: #1e293b;
+  color: #0f172a;
   font-size: 17px;
   font-weight: 500;
   margin: 0; 
-  line-height: 1.2; 
+  line-height: 1.2;
+  transition: all 0.3s ease;
 }
 
-
-<<<<<<< HEAD
-=======
-
->>>>>>> animation-feature
 .delete-icon, .edit-icon {
-  color: #7c3aed;
+  color: #0ea5e9;
   cursor: pointer;
   transition: all 0.2s ease;
   font-size: 1.5rem !important;
+  opacity: 0.7;
 }
 
-.delete-icon:hover {
-  color: #f59e0b;
+.delete-icon:hover, .edit-icon:hover {
+  color: #2563eb;
   transform: scale(1.05);
+  opacity: 1;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> animation-feature
 .task-item.completed .task-text {
   text-decoration: line-through;
   opacity: 0.6;
+  color: #64748b;
 }
+
 .completed {
   text-decoration: line-through;
   opacity: 0.6;
-}
-<<<<<<< HEAD
-=======
-
-.task-item {
-  transition: background-color 0.3s ease;
+  color: #64748b;
 }
 
 .edit-input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 2px solid #e0f2fe;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
   transition: all 0.3s ease;
-  transform-origin: left;
+  background: #ffffff;
+  color: #0f172a;
+  margin-right: 8px;
 }
 
-.display {
-  scroll-behavior: smooth;
+.edit-input:focus {
+  outline: none;
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
 }
->>>>>>> animation-feature
+
+.save-icon {
+  color: #0ea5e9;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 1.8rem !important;
+  opacity: 0.8;
+}
+
+.save-icon:hover {
+  color: #22c55e;
+  transform: scale(1.1);
+  opacity: 1;
+}
